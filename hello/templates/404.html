@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    /> -->
+  {% load static %}
+
+  <link href="/static/ktk/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'ktk/animate.css' %}" />
+  <!-- favicon -->
+  <link rel="shortcut icon" href="{% static 'ktk/images/favicon.png' %}" type="image/png" />
+
+  <!--    external css-->
+  <link rel="stylesheet" href="{% static 'ktk/style.css' %}" type="text/css" />
+  <title>Kartik Choudhary</title>
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,600,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300&family=Roboto+Slab&display=swap" rel="stylesheet">
+  <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+  (function () {
+    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+    s1.async = true;
+    s1.src = 'https://embed.tawk.to/5ee3857b9e5f694422907150/default';
+    s1.charset = 'UTF-8';
+    s1.setAttribute('crossorigin', '*');
+    s0.parentNode.insertBefore(s1, s0);
+  })();
+</script>
+<!--End of Tawk.to Script-->
+
+<body onload="startweb()">
+
+  <!-- LOADER -->
+  <div id="preloader">
+    <div id="loader">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+  <!-- end loader -->
+  <!-- END LOADER -->
+
+  <!--navbar section-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navigationbar">
+    <div class="container">
+      <a class="navbar-brand animated pulse infinite" href="#">
+        Kartik
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul id="navmenu" class="navbar-nav ml-auto">
+          <li class="act nav-item ">
+            <button class="navtg" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+              <a class="nav-link" href="#">Home </span></a>
+            </button>
+          </li>
+
+          <li class="nav-item">
+            <button class="navtg" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+              <a class="nav-link" href="#about">About</a>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="navtg" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+              <a class="nav-link" href="#skills">Skills</a>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="navtg" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+              <a class="nav-link" href="#review">Review</a>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="navtg" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+              <a class="nav-link" href="#reach">Contact</a>
+            </button>
+          </li>
+        </ul>
+
+
+      </div>
+    </div>
+  </nav>
+  <!-- contact page link flying -->
+  <!-- <div
+      id="contactlink"
+      style="
+        top: 400px;
+        right: -130px;
+        position: fixed;
+        z-index: 1;
+        border-radius: 1px !important;
+        height: 38px !important;
+      "
+    >
+      <a href="#contact"
+        ><img src="{% static 'ktk/images/contact6.gif' %}"
+      /></a>
+    </div> -->
+
+  <!--home section -->
+  <div class="scrolleffect">
+    <div class="textdata  ">
+      <strong style="font-size: larger;"><br />KARTIK CHOUDHARY</strong><br />
+      A<span class="typed text-white" id="main"></span>
+      <div id="scrollicon">
+        <a class="down" >
+          <i class="icon fas fa-chevron-down button-scroll" data-scrollTo="about" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!--    about section-->
+  <div id="about" class="">
+    <div class="container ab">
+      <div class="row my-5">
+        <div class="col-md-4">
+          <img src="static/ktk/images/2.jpg" class="img-fluid animation " data-animation="fadeInLeft" alt="Pic"
+            style="max-height: 400px; border-radius: 5px;" />
+        </div>
+        <div class="col-md-7 ml-auto animation" data-animation="fadeInRight">
+          <h1 id="aboutheading" class="animation " data-animation="fadeInRight"><strong> About Me</strong></h1>
+          <p id="intro" class="animation " data-animation="fadeInRight">
+            I am a Final year student of Computer Science and Engineering. I
+            Love Programming and Problem Solving. Python is my favourite Language and I use its Django Framework for the Web
+            Developement. I have good command on Frontend (CSS,
+            Bootstrap, Javascript), Backend(Python, Django, Resful APIs) and Database (MYSQL, SQLITE, POSTGRES). I
+            enjoy to explore new Technology and like new Challanges. Currently I am working as a Django Web Developer intern at Shyena Tech
+            Yarns Pvt Ltd Pune.
+          </p>
+          <div class="pt-5 mt-5">
+            <a href="{% static 'ktk/images/resume.pdf' %}" class="btn btn-sm download-btn animation"
+              data-animation="zoomIn" target="_blank">
+              My Resume</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--    skill section -->
+  <div id="skills">
+    <div class="container py-5">
+      <h1 class="my-5"><strong>Skills</strong></h1>
+      <div class="row">
+        <div class="col-md-6 mt-3">
+          <div class="py-2">
+            <p style="float: left;">Python</p>
+            <p style="float: right;">%</p>
+            <p style="float: right;"><span id="percentage" class="counter-up">85</span></p>
+          </div>
+          <div class="progress1 progress-moved mt-4">
+            <div class="skillanimation" data-animation="progress-bar1">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mt-3">
+          <div class="py-2">
+            <p style="float: left;">Django</p>
+            <p style="float: right;">%</p>
+            <p style="float: right;"><span id="percentage" class="counter-up">80</span></p>
+          </div>
+          <div class="progress1 progress-moved mt-4">
+            <div class="skillanimation" data-animation="progress-bar2">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mt-3">
+          <div class="py-2">
+            <p style="float: left;">Algorithm</p>
+            <p style="float: right;">%</p>
+            <p style="float: right;"><span id="percentage" class="counter-up">65</span></p>
+          </div>
+          <div class="progress1 progress-moved mt-4">
+            <div class="skillanimation" data-animation="progress-bar3">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mt-3">
+          <div class="py-2">
+            <p style="float: left;">Database</p>
+            <p style="float: right;">%</p>
+            <p style="float: right;"><span id="percentage" class="counter-up">70</span></p>
+          </div>
+          <div class="progress1 progress-moved mt-4">
+            <div class="skillanimation" data-animation="progress-bar4">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- projects section -->
+  <div id="project" class="py-5">
+    <div class="projecttext animation" data-animation="slideInUp">
+      <strong>
+        <h1><strong>Projects.</strong></h1>
+      </strong><br /><br />
+      Projects will be uploaded soon.
+    </div>
+  </div>
+
+  <!-- Review Section -->
+  <div id="review" class="py-5">
+    <div class="container pt-5 animation " data-animation="fadeInRight">
+      <div id="revslide">
+        <div id="reviewtext" class="px-2">
+          <h3><strong>Reviews.</strong></h3>
+          <br />
+          <div id="carouselExampleFade" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active p-1">
+                <img src="static/ktk/images/shubham2.jpg" class="img-fluid" alt="Pic"
+                  style="height: 70px;width: 70px;border-radius: 50%;"><br><br>
+                Perfect Writer , Great Aurator , Proficient Python Coder ,
+                Great Human being 😬😎
+                <br /><br />
+                -Shubham Verma<br>
+
+              </div>
+              {% for review in reviews %}
+              <div class="carousel-item p-1">
+                <img src="/static/{{review.photo}}" class="img-fluid" alt="Pic"
+                  style="height: 70px;width: 70px;border-radius: 50%;">
+                <br>
+                <br>
+                {{review.Review}}<br /><br />
+
+                -{{review.Name}}<br>
+
+              </div>
+              {% endfor %}
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev"
+              style="color: black;">
+              <span class="carousel-control-prev-icon" aria-hidden=" true" style="color: black;"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class=" sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a href="#writereview" id="writereview" class="pt-5 " data-animation="">
+        <button class="btn btn-sm download-btn mt-5 mb-3 animation" data-animation="wobble" type="button"
+          data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Write a Review
+        </button></a>
+
+      <div class="collapse mx-5" id="collapseExample">
+        <div class="container">
+          <form class="form mt-5" action="review_submit" method="POST">
+            {% csrf_token %}
+            <div class="row">
+              <div class="col">
+                <input type="text" class="form-control m-auto" placeholder="Name" name="Name" required />
+              </div>
+              <div class="col">
+                <input type="email" class="form-control m-auto" placeholder="Email" required name="Email" />
+              </div>
+            </div>
+            <div class="form-group mt-5">
+              <textarea rows="5" class="form-control m-auto" placeholder="Review" required name="Review"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark mt-5 send" style="background-color: black;color: white;" value="Review">
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  Hobby section -->
+  <div id="hobbysection" class="pt-1 pb-5">
+    <div id="hobby" class="py-5 mt-5 animation" data-animation="slideInLeft">
+      <br />
+      <h3><strong>Hobbies.</strong></h3>
+      <!-- <a href="#hobby"><button class="btn btn-sm download-btn mt-5 mb-2" type="button" data-toggle="collapse"
+          data-target="#hobbydetail" aria-expanded="false" aria-controls="hobbydetail">
+          Explore Hobbies
+        </button></a> -->
+    </div>
+    <div class=" pb-3" id="hobbydetail">
+      <a href="#hobby"><button class="btn btn-sm download-btn" type="button" data-toggle="collapse"
+          data-target="#youtubevideo" aria-expanded="false" aria-controls="youtubevideo">
+          Youtube Videos
+        </button></a>
+      <a href="#hobby" class="mx-4"><button class="btn btn-sm download-btn" type="button" data-toggle="collapse"
+          data-target="#quotes" aria-expanded="false" aria-controls="quotes">
+          Quotes
+        </button></a>
+      <div class="collapse py-3" id="youtubevideo" aria-labelledby="hobbysection" data-parent="#hobbysection">
+        <iframe class="yt" src="https://www.youtube.com/embed/eKybqPcXngE" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <iframe class="yt" src="https://www.youtube.com/embed/K2MFIU-oC1U" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <iframe class="yt" src="https://www.youtube.com/embed/ddmdmhimLi8" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <iframe class="yt" src="https://www.youtube.com/embed/5JYmxuA_LCI" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <iframe class="yt" src="https://www.youtube.com/embed/6tb8HR_QJeU" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <iframe class="yt" src="https://www.youtube.com/embed/5u2BOqANlcg" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="collapse container py-3" id="quotes" aria-labelledby="hobbysection" data-parent="#hobbysection">
+        <div class="row">
+          {% for quote in quotes %}
+          <div class="card col-sm-6 col-md-4 col-xs-3 p-2 mb-3">
+            <img src="/media/{{quote.image}}" class="card-img-top pt-1" alt="loading" />
+            <!-- <div class="card-body ">
+                          <p class="card-text">{{quote.title}}.</p>
+                        </div> -->
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div id="gallery" class="p-5">
+        <br>
+        <h3><strong>Gallery.</strong> </h3>
+        <button class="btn btn-sm download-btn my-5" type="button" data-toggle="collapse" data-target="#images"
+            aria-expanded="false" aria-controls="images">
+            Image Gallery
+        </button>
+
+    </div> -->
+
+  <!-- contact section-->
+  <!-- <div id="contact" class="py-5 contactscroll">
+    <div class="container mt-3 ">
+      <div class=" animation " data-animation=" heartBeat ">
+        <h1 style="font-size: 200%; text-shadow: 0 0 10px #000; color: white;">
+          <strong>Say Hello.</strong>
+        </h1>
+      </div>
+      <div class="col-md-8 col-sm-10 m-auto animation" data-animation="zoomIn">
+        <form class="form mt-5" action="" method="POST">
+          {% csrf_token %}
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control m-auto" placeholder="Name*" name="Name" required />
+            </div>
+            <div class="col">
+              <input type="email" class="form-control m-auto" placeholder="Email-id*" required name="Email" />
+            </div>
+          </div>
+          <div class="form-group mt-5">
+            <input type="text" class="form-control m-auto" placeholder="Subject" name="Subject" />
+          </div>
+
+          <div class="form-group mt-5">
+            <textarea rows="5" class="form-control m-auto" placeholder="Message*" required name="msg"></textarea>
+          </div>
+          <div class="form-group mt-5">
+            <input type="file" class="form-control-file" id="exampleFormControlFile1" name="attachment" />
+          </div>
+
+          <button type="submit" class="btn btn-dark mt-5 send" value="Contact">
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
+  </div> -->
+  <div id="reach" class="py-5">
+    <h3><strong>Get In Touch</strong> </h3>
+    <div class="container my-5 contactinfo ">
+      <div class=" items animation " data-animation="zoomIn">
+        <!-- <div class="col-md-6"> -->
+        <i class="fas fa-phone-square-alt mt-3"></i>
+        <a href="https://api.whatsapp.com/send?phone=918077078388">8077078388</a>, <a
+          href="https://api.whatsapp.com/send?phone=919456985137">9456985137</a></div>
+      <div class=" items animation " data-animation="zoomIn">
+        <i class="fas fa-envelope mt-3"></i><a href="mailto:kartik123choudhary@gmail.com">
+          kartik123choudhary@gmail.com</a></div>
+      <!-- </div> -->
+      <!-- <div class="col-md-6"> -->
+      <div class=" items animation " data-animation="zoomIn">
+        <i class="fas fa-map-marker-alt mt-3"></i>
+        Vill- Malakpur, Post-Nakur <br> District-saharanpur <br> Uttar Pradesh ,
+        <a class="" data-toggle="collapse" href="#map" aria-expanded="false" aria-controls="map">
+          See on Map
+        </a></div>
+      <!-- </div> -->
+
+
+
+      <div id="map" class="container collapse">
+        <a class="" data-toggle="collapse" href="#map" aria-expanded="false" aria-controls="map" style="color: black;">
+          Close Map
+        </a>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4616.3364797891745!2d77.32640432333748!3d29.9119692046162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e8cd38bfa27ad%3A0xb56c3f307ba0677c!2zMjnCsDU0JzMzLjUiTiA3N8KwMTknMzQuOSJF!5e0!3m2!1sen!2sin!4v1592800792671!5m2!1sen!2sin"
+          width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0"></iframe>
+      </div>
+    </div>
+
+  </div>
+  <!--footer section-->
+  <footer class="mt-5">
+    <div class="container footersec">
+      <a href="https://www.linkedin.com/in/kartik-choudhary-41aa70175/" target="_blank"><i
+          class="footicon fab fa-linkedin mr-3"></i></a>
+      <a href="https://www.instagram.com/chhota_sa_kalamkaar/" target="_blank"><i
+          class="footicon fab fa-instagram mr-3"></i></a>
+      <a href="https://github.com/choudharykartik" target="_blank"><i class="footicon fab fa-github mr-3"></i></a>
+      <a href="https://twitter.com/Kartik57667170" target="_blank"><i class="footicon fab fa-twitter mr-3"></i></a>
+      <a href="https://www.hackerrank.com/kartik_17" target="_blank"><i class="footicon fab fa-hackerrank mr-3"></i></a>
+      <a href="https://www.youtube.com/channel/UCEbMKf6Ouf6wyZHVgiQLW_A/videos" target="_blank"><i
+          class="footicon fab fa-youtube mr-3"></i></a>
+      <a href="https://www.yourquote.in/kartik-choudhary-ytn7/quotes" target="_blank"><i
+          class="footicon fab fa-y-combinator mr-3"></i></a>
+      <a href="https://www.facebook.com/kartik123choudhary" target="_blank"><i class="footicon fab fa-facebook"></i></a>
+    </div>
+    <p class="pb-5 pt-3">Copyright © By Kartik | All Right Reserved.</p>
+  </footer>
+
+  <!--JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script>
+    var preloader = document.getElementById("preloader");
+    function startweb() {
+      preloader.style.display = "none";
+    }
+  </script>
+  <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script> -->
+
+
+  <script src="{% static 'ktk/jquery.min.js' %}"></script>
+  <script src="{% static 'ktk/jquery-migrate.min.js' %}"></script>
+  <script src="{% static 'ktk/bootstrap.min.js' %}"></script>
+  <script src="{% static 'ktk/nav.js' %}"></script>
+
+  <script src="{% static 'ktk/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'ktk/counter.js' %}"></script>
+  <script src="{% static 'ktk/myscript.js' %}"></script>
+
+
+  <script src="{% static 'ktk/typed.js' %}"></script>
+
+
+
+  <script src="https://kit.fontawesome.com/8d501b0414.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
