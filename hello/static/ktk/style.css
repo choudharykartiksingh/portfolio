@@ -14,8 +14,8 @@
 #loader {
   position: absolute;
   margin: auto;
-  left: 0;
-  right: 0;
+  /* left: 0; */
+  right: 60%;
   top: 50%;
   width: 90px;
 }
