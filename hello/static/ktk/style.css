@@ -485,7 +485,7 @@ $animation-delay: 0.7s;
 .contactinfo .items:hover i{
   color: black;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   .contactinfo .items{
     width: 90%;
     margin: 10px 0;
