@@ -28,33 +28,22 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300&family=Roboto+Slab&display=swap" rel="stylesheet">
-  <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-  var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-  (function () {
-    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-    s1.async = true;
-    s1.src = 'https://embed.tawk.to/5ee3857b9e5f694422907150/default';
-    s1.charset = 'UTF-8';
-    s1.setAttribute('crossorigin', '*');
-    s0.parentNode.insertBefore(s1, s0);
-  })();
-</script>
-<!--End of Tawk.to Script-->
-
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  </head>
 <body onload="startweb()">
 
   <!-- LOADER -->
-  <div id="preloader">
+  <div id="preloader" style="align-items: center;text-align: center;">
     <div id="loader">
-      <ul>
+      <img src="static/ktk/images/name.gif" alt="">
+      <!-- <ul>
         <li></li>
         <li></li>
         <li></li>
         <li></li>
         <li></li>
         <li></li>
-      </ul>
+      </ul> -->
     </div>
   </div>
   <!-- end loader -->
@@ -278,7 +267,7 @@
 
       <div class="collapse mx-5" id="collapseExample">
         <div class="container">
-          <form class="form mt-5" action="review_submit" method="POST">
+          <form class="form mt-5" action="/review_submit" method="POST" enctype="multipart/form-data">
             {% csrf_token %}
             <div class="row">
               <div class="col">
@@ -290,6 +279,9 @@
             </div>
             <div class="form-group mt-5">
               <textarea rows="5" class="form-control m-auto" placeholder="Review" required name="Review"></textarea>
+            </div>
+            <div class="form-group mt-5">
+              <input type="file" class="form-control-file" id="exampleFormControlFile1" name="attachment" accept="image/*"/>
             </div>
             <button type="submit" class="btn btn-dark mt-5 send" style="background-color: black;color: white;" value="Review">
               Send
@@ -342,7 +334,7 @@
         <div class="row">
           {% for quote in quotes %}
           <div class="card col-sm-6 col-md-4 col-xs-3 p-2 mb-3">
-            <img src="/media/{{quote.image}}" class="card-img-top pt-1" alt="loading" />
+            <img src="/static/{{quote.image}}" class="card-img-top pt-1" alt="loading" />
             <!-- <div class="card-body ">
                           <p class="card-text">{{quote.title}}.</p>
                         </div> -->
@@ -485,6 +477,20 @@
 
 
   <script src="https://kit.fontawesome.com/8d501b0414.js" crossorigin="anonymous"></script>
+
+   <!--Start of Tawk.to Script-->
+   <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5f72764b4704467e89f30bd2/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
 </body>
 
 </html>
